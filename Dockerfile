@@ -2,7 +2,7 @@ FROM alpine:latest
 LABEL maintainer="avpnusr"
 
 # Install openvpn
-RUN apk --no-cache --no-progress add bash curl ip6tables iptables openvpn shadow tini tzdata && \
+RUN apk --no-cache --no-progress add bash curl ip6tables iptables openvpn shadow shadow-login tini tzdata && \
     addgroup -S vpn && \
     rm -rf /tmp/*
 
