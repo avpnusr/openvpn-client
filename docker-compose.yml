@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   vpn:
-    image: dperson/openvpn-client
+    image: ghcr.io/avpnusr/openvpn-client
     # cap_add, security_opt, and volume required for the image to function
     cap_add:
       - net_admin
